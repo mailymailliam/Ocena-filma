@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="sl-SL">
+<head>
+	<title>Ocena filma</title>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" type="image/x-icon" href="logos.png">
+	<link rel="stylesheet" href="style.css" type="text/css" media="all">
+</head>
+<body>
+<div id="glava">
+<header>
+	<div id="head"><img src="loho.jpg" width="100px" height="100px" alt="spotify-logo" title="spotif"></div>
+	<div id="nas"> 
+				<h1>Ocena filma</h1>
+			</div>
+	</header>
+</div>
+<div id="main">
+	
+	
+			<form method="POST" action="">
+		<div id="pol">
+			
+			<div id="fill">
+				<h3>VNOS OCENE</h3>
+			</div>
+			<div class="polj">
+			<div class="vnos">
+				<p class="nasl">Podatki ocenjevalca:</p>
+					
+					<input type="text" class="user" required placeholder="ime --Janez--">
+					<input type="text" class="user" required placeholder="priimek --Novak--"> 
+					<input type="email" class="long" required placeholder="email --janez.novak@gmail.com--"> 
+					
+				
+			</div>
+			<div class="side">
+				V pomoč je seznam filmov po letnicah <a href="https://en.wikipedia.org/wiki/Lists_of_films" target="_blank"V pomoč>TUKAJ</a>!
+			
+				
+				<br>
+				<p class="sn">Obrazec se posreduje, če so izpolnjena vsa polja.</p>
+				<p class="nasl">Izberi svoje najljubše žanre:</p>
+					<input type="checkbox" id="dok" name="dokumentarni" value="dakumentarni" required>
+					<label for="dok"> DOKUMENTARNI</label><br>
+					<input type="checkbox" id="kom" name="komedija" value="komedija" required>
+					<label for="kom"> KOMEDIJA</label><br>
+					<input type="checkbox" id="det" name="detektivski" value="detektivski" required>
+					<label for="det"> DETEKTIVSKI</label><br>
+					<input type="checkbox" id="gro" name="grozljivka" value="grozljivka" required>
+					<label for="gro"> GROZLJIVKA</label><br>
+					<input type="checkbox" id="fan" name="fantazijski" value="fantazijski" required>
+					<label for="fan"> FANTAZIJSKI</label><br>
+					<input type="checkbox" id="rom" name="romantični" value="romantični" required>
+					<label for="rom">ROMANTIČNI</label><br>
+					<img src="movie.png" width="200px" height="200px" alt="spotify-logo" title="spotif">
+			</div>
+			
+			<div class="vnosi">
+				<p class="nasl">Podatki o filmu:</p>
+					
+					<input type="text" class="long" pattern=".+\s\d{4}" required placeholder="ime in letnica filma --Titanic 1998--">
+					<textarea class="area" required placeholder="opombe/mnenje"></textarea>
+					
+				
+			</div>
+			<div class="ocene">
+				
+					<p class="nasl">Splošna ocena:</p>
+					<input type="radio" id="odlicen" name="ocena" value="odl" required>
+					<label for="odlicen">ODLIČEN</label>
+					<input type="radio" id="dober" name="ocena" value="dob" required>
+					<label for="dober">DOBER</label>
+					<input type="radio" id="povprecen" name="ocena" value="povp" required>
+					<label for="povprecen">POVPREČEN</label>
+					<input type="radio" id="slab" name="ocena" value="sla" required>
+					<label for="slab">SLAB</label>
+					<p class="marto">Ali bi si film ogledal še enkrat:</p>
+					<input type="radio" id="da" name="dn" value="da" required>
+					<label for="da">DA</label>
+					<input type="radio" id="ne" name="dn" value="ne" required>
+					<label for="ne">NE</label>
+			</div>
+			        <button type="submit" class="button">POSREDUJ</button>	
+			</div>
+		</div>
+		</form>
+	</div>
+	<div id="foot">&copy COPYRIGHT</div>
+</body>
+</html>
