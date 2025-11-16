@@ -240,3 +240,6 @@ html,body{
 	margin-left:20px;
 
 }
+input type=text{
+	padding:5px;
+}
