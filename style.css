@@ -246,3 +246,8 @@ input{
 textarea{
 	padding:5px;
 }
+.swal2-popup {
+    background: black !important;
+    border-radius: 20px !important;
+}
+
