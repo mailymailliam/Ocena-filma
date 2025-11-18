@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     form.addEventListener("submit", function (e) {
         e.preventDefault(); 
-
+         
       
         if (form.checkValidity()) {
             Swal.fire({
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
 
             
-            setTimeout(() => form.submit(), 1500);
+            form.reset();
         } 
         else {
             Swal.fire({
@@ -26,3 +26,4 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
