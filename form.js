@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded",function () {
     const form=document.querySelector("form");
-
     form.addEventListener("submit",function (e) {
         e.preventDefault();
         if (!form.checkValidity()) {
@@ -8,8 +7,7 @@ document.addEventListener("DOMContentLoaded",function () {
             Swal.fire({
                 icon:"error",
                 title:"Oops...",
-                text:"Polje/-a ni/niso prav izpolnjeno/-na"
-				
+                text:"Polje/-a ni/niso prav izpolnjeno/-na"	
             });
             return;
         }
@@ -22,7 +20,6 @@ document.addEventListener("DOMContentLoaded",function () {
             timer:1500
         });
 		}
-
         setTimeout(()=>form.reset(),1500);
     });
 });
