@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         Swal.fire({
-            position: "top-end",
+            position: "center",
             icon: "success",
             title: "Vaša ocena je bila poslana!",
             showConfirmButton: false,
@@ -25,3 +25,4 @@ document.addEventListener("DOMContentLoaded", function () {
         setTimeout(() => form.reset(), 1500);
     });
 });
+
