@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
             Swal.fire({
                 icon: "error",
                 title: "Oops...",
-                text: "Polje/-a niso pravilno izpolnjena."
+                text: "Polje/-a ni/niso prav izpolnjeno/-na"
             });
 
             return;
@@ -27,3 +27,4 @@ document.addEventListener("DOMContentLoaded", function () {
         setTimeout(() => form.reset(), 1500);
     });
 });
+
