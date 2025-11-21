@@ -2,28 +2,26 @@ document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form");
 
     form.addEventListener("submit", function (e) {
-        e.preventDefault(); 
-         
-      
-        if (form.checkValidity()) {
-            Swal.fire({
-                position: "center",
-                icon: "success",
-                title: "Vaša ocena je bila uspešno poslana!",
-                showConfirmButton: false,
-                timer: 1500
-            });
-
-            
-            form.reset();
-        } 
-        else {
+        e.preventDefault();
+        if (!form.checkValidity()) {
+            form.reportValidity();
             Swal.fire({
                 icon: "error",
-                title: "Napaka",
-                text: "Izpolniti morate vsa polja!",
+                title: "Oops...",
+                text: "Polje/-a ni/niso prav izpolnjeno/-na", 
             });
+            return;
         }
+
+        Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "Vaša ocena je bila poslana!",
+            showConfirmButton: false,
+            timer: 1500
+        });
+
+
+        setTimeout(() => form.reset(), 1500);
     });
 });
-
