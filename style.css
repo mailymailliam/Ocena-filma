@@ -253,3 +253,13 @@ textarea{
     border-radius: 20px !important;
 	color:white;
 }
+.vnos, .vnosi, .ocene, .side, .button, .swal2-popup, input , textarea{
+	  font-family: "Science Gothic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "CTRS" 0;
+}
