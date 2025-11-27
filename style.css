@@ -240,6 +240,7 @@ input{
 }
 textarea{
 	padding:5px;
+  	resize: none;
 }
 .swal2-popup {
     background: black !important;
@@ -256,5 +257,6 @@ textarea{
     "wdth" 100,
     "CTRS" 0;
 }
+
 
 
